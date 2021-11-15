@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input{
+    all: unset;
+}
+
+select, select:focus{
+    border: none;
+    background-color: white;
+}
+
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-create{
+    background-color: #264653;
+    color: white;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 0 7px 7px 0;
+    font-size: 25px;
+}
+
+.input{
+    height: 40px;
+    border-radius: 7px 0 0 7px;
+    background-color: #B7CED7;
+    color: white;
+    font-size: 25px;
+    width: 500px;
+}
+
+.container{
+    width: 90%;
+    margin:20px auto;
+    text-align: center;
+}
+
+.card{
+    border: 1px solid pink;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    min-height: 100px;
+    position: relative;
+    padding: 30px;
+    overflow-wrap: break-word;
+    border-radius: 7px;
+}
+
+.select-card{
+    position: absolute;
+    bottom: 10px;
+    right: 42%;
+}
+
+.delete-card{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: #264653;
+    color: white;
+    border-radius: 3px;
+    width: 20px;
+    text-align: center;
+}
+
+.columns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 700px;
+}
+
+.column{
+    width: 33%;
+}
+
+.header{
+    color: #264653;
+    font-weight: bold;
+}
+
+.columns-name{
+    color: white;
+    opacity: 0.8;
+}
+
+.done{
+    background-color: #2a9d8f;
+}
+
+.progress{
+    background-color: #e9c46a;
+}
+
+.todo{
+    background-color: #e76f51;
+}
