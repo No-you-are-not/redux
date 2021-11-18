@@ -5,7 +5,7 @@ import {store} from "../redux/store";
 
 
 export default function Users(){
-    const data = store.getState().users
+    const data = useSelector((value) => value.users)
     return(
         <div className={'container'}>
             {

@@ -8,12 +8,13 @@ import {store} from "./redux/store";
 
 export default function App(){
     const [check, setCheck] = useState(true)
+    let dispatch = useDispatch();
     const URL = 'https://jsonplaceholder.typicode.com/users';
     useEffect(() => {
         fetch(URL)
             .then(response => response.json())
             .then(data => {
-                store.dispatch(getUser(data))
+                dispatch(getUser(data))
             })
             .catch(error => console.log(error))
     }, []);
